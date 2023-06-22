@@ -1,0 +1,91 @@
+.calendar{
+	max-width: 740px;
+	background-color: #fefefe;
+	margin: 0 auto;
+	border-radius: 15px;
+	box-shadow: #000 0px 0px 5px -1px;
+}
+.calendar__header{
+	display: flex;
+	justify-content: space-between;
+	font-family: 	'Roboto','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	flex-wrap: wrap;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+.calendar__headline h2{
+	font-size: 28px;
+	font-weight: 300;
+	margin: 0;
+
+}
+.calendar__headline{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: #fefefe;
+}
+.red-l{
+	font-size: 28px;
+	font-weight: 300;
+  color: red;	
+}
+.red-l:hover{
+	cursor: pointer;
+}
+.calendar__footer{
+	font-family: 	'Roboto','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	padding-left: 50px;
+	background-color: #f6f6f6;
+	position: sticky;
+	bottom: 0;
+}
+.normal{
+	font-size: 20px;
+	font-weight: normal;
+}
+.modal-dialog {
+  margin: auto;
+	top: calc(50% - 120px);
+}
+.modal-dialog	.modal-content{
+	background: #e7e7e7;
+	border: 0px;
+	border-radius: 20px;
+}
+
+.modal-text h2{
+	font-size: 20px;
+}
+.modal-text{
+	text-align: center;
+}
+
+.modal-dialog .modal-footer {
+	padding: 0;
+	justify-content: start;
+	flex-wrap: nowrap;
+}
+.modal-footer .modal-button{
+	flex:50%;
+	text-align: center; 
+	border-top: 2px #aaa solid;
+	margin: 0;
+	padding: 15px;
+	color: #0073ff;
+	font-weight: 700;
+}
+.modal-button:hover{
+	cursor: pointer;
+}
+.modal-footer .modal-button:first-child{
+	border-right: 1px #aaa solid;
+}
+.modal-footer .modal-button:last-child{
+	border-left: 1px #aaa solid;
+}

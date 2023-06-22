@@ -1,0 +1,47 @@
+.cell {
+  width: calc(100% / 8);
+  border: #bbb 2px solid;
+}
+.cell {
+  position: relative;
+	padding-bottom: calc(100% / 8);
+}
+.cell:hover{
+	cursor: pointer;
+}
+.cell::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.border-invisible{
+	border: 0;
+}
+.time{
+	position: absolute;
+	top: -10px;
+	right: 5px;
+	font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #aaa;
+	font-size: 16px;
+}
+.table-container {
+	margin-top: 5px;
+}
+
+.table-container table {
+  table-layout: fixed;
+  width: 100%;
+	border-collapse: collapse;
+	
+}
+.interview-cell{
+	background-color: #83ffff;
+}
+.choosen-cell{
+	background: #3787ff;
+}
