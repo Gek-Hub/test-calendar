@@ -7,14 +7,14 @@ export default function ModalAddDate({addDate, choosenDate}) {
   const [date, setDate] = useState('');
 
 	// I did modal gialog instead standart prompt
-  function handleOpenModal() {
+  function handleOpenModal() { 
     if (!date && choosenDate.getTime()!=0) {
       choosenDate.setHours(choosenDate.getHours()+3)
       setDate(choosenDate.toISOString().slice(0,-5).replace(/T/g,' '))
     }
     setShowModal(true);
     //prompt("Enter event date:\nYYYY-MM-DD HH:mm:ss", date))
-
+    
   }
 
   function handleCloseModal() {
